@@ -28,7 +28,7 @@ Application design:
 *  [OPTIONAL] Implement some sort of storage cache for the data layer, it can be in-memory for ease. You need to make sure the cache is invalidated and updated when the user adds a new task.
 
 ## Misc
-* The code should be *readable and described* by comments. JavaScript according to [documentationjs](https://github.com/documentationjs/documentation/blob/master/docs/GETTING_STARTED.md), .NET according to [Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc), and other languages according to the selected specification.
+* The code should be **readable and described** by comments. JavaScript according to [documentationjs](https://github.com/documentationjs/documentation/blob/master/docs/GETTING_STARTED.md), .NET according to [Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc), and other languages according to the selected specification.
 * We leave the application in the development version, we do not minify the files, we do not compress them, we do not combine them, etc.
 * Please attach instructions on how to run the application(s).
 

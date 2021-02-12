@@ -22,8 +22,10 @@ Application design:
 * Use a sans-serif font, like [Open Sans](https://fonts.google.com/specimen/Open+Sans), from [Google Fonts](https://fonts.google.com/).
 
 ## Backend
-* API should be written according to the REST specification. All queries and responses are sent in JSON format. If there is no error, the response should be 200 or 201 accordingly. If there is an error, it should return 400 with an array of error messages.
-* Separate the `Controller` code and the `Data` code.
+* API should be written according to the REST specification, using .NET's WebApi.
+* All queries and responses are sent in JSON format.
+* If there is no error, the response should be 200 (Ok) or 201 (Created) accordingly. If there is an error, it should return 400 with an array of error messages, preferably in multiple languages (at least Norwegian and English).
+* Separate the `Controller` code and the `DataStorage` code.
 * There will be no user service or authentication, each person has access to create, read, delete, or updating tasks.
 *  [OPTIONAL] Implement some sort of storage cache for the data layer, it can be in-memory for ease. You need to make sure the cache is invalidated and updated when the user adds a new task.
 

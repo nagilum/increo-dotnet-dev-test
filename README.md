@@ -1,6 +1,5 @@
-
 # Increo .NET Developer Test
-Implementation of a simple To-Do application, using HTML5 on the frontend and .NET on the backend. The application allows you to add, view, mark as done, and delete tasks.
+Implementation of a simple To-Do application, using HTML5 on the frontend, C# and .NET on the backend. The application allows you to add, view, mark as done, and delete tasks.
 
 ## Functionality
 The application displays a list of tasks to be performed. Tasks are divided into _done_ and _to be done_. Tasks _done_ are crossed out and are marked in color `#9eb2c0` and the checkbox on the left is checked. Tasks _to be done_ are marked with color `#2e3641` and the checkbox on the left is unchecked.
@@ -11,9 +10,9 @@ Each task can be deleted by clicking the trash icon, but should display a messag
 
 ## Frontend
 Application design:
-![Application design](https://raw.githubusercontent.com/nagilum/increo-dotnet-dev-test/assets/to-do-list.png)
+![Application design](https://raw.githubusercontent.com/nagilum/increo-dotnet-dev-test/main/assets/to-do-list.png)
 
-* In the [assets](https://github.com/nagilum/increo-dotnet-dev-test/assets) folder you will find the `PSD` Photoshop file with the application design. You can use [Photopea](https://www.photopea.com/) to work with `PSD` files online.
+* In the [assets](https://github.com/nagilum/increo-dotnet-dev-test/tree/main/assets) folder you will find the `PSD` Photoshop file with the application design. You can use [Photopea](https://www.photopea.com/) to work with `PSD` files online.
 * The application should be written as a `Single Page Application`, using only one `HTML` file, one `CSS` file, and one `JavaScript` file.
 * Communication between frontend and backend should work in the background, without reloading the page, preferably using `AJAX`.
 * Application style should be built using a `CSS Preprocessor`, like `SCSS` or `LESS`.
@@ -24,7 +23,7 @@ Application design:
 ## Backend
 * API should be written according to the REST specification. All queries and responses are sent in JSON format. If there is no error, the response should be 200 or 201 accordingly. If there is an error, it should return 400 with an array of error messages.
 * There will be no user service or authentication, each person has access to create, read, delete, or updating tasks.
-* [OPTIONAL] Implement some sort of storage cache for the data layer, it can be in-memory for ease. You need to make sure the cache is invalidated and updated when the user adds a new task.
+*  [OPTIONAL] Implement some sort of storage cache for the data layer, it can be in-memory for ease. You need to make sure the cache is invalidated and updated when the user adds a new task.
 
 ## Misc
 * The code should be *readable and described* by comments. JavaScript according to [documentationjs](https://github.com/documentationjs/documentation/blob/master/docs/GETTING_STARTED.md), .NET according to [Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc), and other languages according to the selected specification.

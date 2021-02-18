@@ -15,7 +15,7 @@ Application design:
 
 ![Application design](https://raw.githubusercontent.com/nagilum/increo-dotnet-dev-test/main/assets/to-do-list.png)
 
-* In the [assets](https://github.com/nagilum/increo-dotnet-dev-test/tree/main/assets) folder you will find the `PSD` Photoshop file with the application design. You can use [Photopea](https://www.photopea.com/) to work with `PSD` files online.
+* In the [assets](https://github.com/nagilum/increo-dotnet-dev-test/tree/main/assets) folder you will find the `PSD` Photoshop file with the application design. You can use [Photopea](https://www.photopea.com/) to work with `PSD` files online. The implementation of the design doesn't have to be pixel perfect, but it should resemble the design as close as you can get it.
 * The application should be written as a `Single Page Application`, using only one `HTML` file, one `CSS` file, and one `JavaScript` file.
 * Communication between frontend and backend should work in the background, without reloading the page, preferably using `AJAX`.
 * Application style should be built using a `CSS Preprocessor`, like `SCSS` or `LESS`.

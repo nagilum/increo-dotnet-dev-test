@@ -6,6 +6,8 @@ The application displays a list of tasks to be performed. Tasks are divided into
 
 A field with the function of adding a new task is always displayed under the last task in the list. The new task added through there is always _to be done_. When adding a task from that field, the new task will appear at the bottom of the list, but above the add-new-task field. To add the new task from the field at the bottom, it should react to clicking the `+` icon on the left, or pressing the `ENTER` key. Either way, the focus should return to the title field and the field emptied after the new task is created and added to the list. You cannot add a task without adding a title. Validation should be on both the frontend and backend sides.
 
+Each task can be marked as completed by checking the checkbox for it.
+
 Each task can be deleted by clicking the trash icon, but should display a message box to the user asking: `Are you sure?`
 
 ## Frontend
@@ -18,7 +20,7 @@ Application design:
 * Communication between frontend and backend should work in the background, without reloading the page, preferably using `AJAX`.
 * Application style should be built using a `CSS Preprocessor`, like `SCSS` or `LESS`.
 * Application logic should be divided with `Model-View-Controller` or `Model-View-Whatever` architecture.
-* Please do not use any JS libraries, or use them with minimal amount. We prefer `Vanilla JS`.
+* Please do not use any JS libraries, or use them with minimal amount. We prefer `Vanilla JS`. If you do need to use JS libraries, please state why you use it and what part.
 * Use a sans-serif font, like [Open Sans](https://fonts.google.com/specimen/Open+Sans), from [Google Fonts](https://fonts.google.com/).
 
 ## Backend
@@ -27,7 +29,8 @@ Application design:
 * If there is no error, the response should be `200 Ok` or `201 Created` accordingly. If there is an error, it should return `400 Bad Request` with an array of error messages, preferably in multiple languages (at least Norwegian and English).
 * Separate the `Controller` code and the `DataStorage` code.
 * There will be no user service or authentication, each person has access to create, read, delete, or updating tasks.
-*  [OPTIONAL] Implement some sort of storage cache for the data layer, it can be in-memory for ease. You need to make sure the cache is invalidated and updated when the user adds a new task.
+* How you store the data is up to you, but it needs to be separated from the controller code.
+* [OPTIONAL] Implement some sort of storage cache for the data layer, it can be in-memory for ease. You need to make sure the cache is invalidated and updated when the user adds a new task.
 
 ## Misc
 * The code should be **readable and described** by comments. JavaScript according to [documentationjs](https://github.com/documentationjs/documentation/blob/master/docs/GETTING_STARTED.md), .NET according to [Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc), and other languages according to the selected specification.
